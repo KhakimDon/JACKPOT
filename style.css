@@ -8,6 +8,25 @@
     list-style-type: none;
 }
 
+@font-face {
+    font-family: Chakra Petch;
+    src: url(./assets/fonts/ChakraPetch-Regular.ttf);
+}
+
+@font-face {
+    font-family: Bebas Neue;
+    src: url(./assets/fonts/BebasNeue-Regular.ttf);
+}
+
+@font-face {
+    font-family: Roboto;
+    src: url(./assets/fonts/Roboto-Regular.ttf);
+}
+
+body {
+    background-color: rgba(40, 11, 112, 1);
+}
+
 .theJackpot {
     background-color: rgba(40, 11, 112, 1);
     position: relative;
@@ -15,10 +34,7 @@
 
 }
 
-@font-face {
-    font-family: Chakra Petch;
-    src: url(./assets/fonts/ChakraPetch-Regular.ttf);
-}
+
 
 .theJackpot__wrapper {
     padding-top: 100px;
@@ -78,4 +94,90 @@
     top: 350px;
     left: 480px;
     z-index: -1;
+}
+
+.footer {
+    background-image: url("./assets/pics/footer-bg.png");
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
+}
+
+.footer__wrapper {
+    padding-top: 250px;
+    display: flex;
+    width: 85%;
+    height: 620px;
+    align-items: flex-start;
+    justify-content: space-between;
+    margin: auto;
+}
+
+.footer__wrapper__block {
+    display: flex;
+    flex-direction: column;
+
+}
+
+
+.footer__wrapper :nth-child(5) {
+    width: 20%;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+
+}
+
+.footer__wrapper__block__logo {
+    font-family: Bebas Neue;
+    font-size: 42px;
+    font-weight: 400;
+    color: white;
+}
+
+.footer__wrapper__block__listname {
+    font-family: Chakra Petch;
+    font-size: 20px;
+    font-weight: 700;
+    color: white;
+    width: 100%;
+
+}
+
+.footer__wrapper__block__listitem {
+    font-family: Roboto;
+    font-size: 16px;
+    font-weight: 400;
+    color: white;
+    margin-top: 21px;
+}
+
+.footer__wrapper__block__circlesolials {
+    height: 40px;
+    width: 40px;
+    background: transparent;
+    border: 1px solid white;
+    border-radius: 20px;
+    margin-top: 21px;
+}
+
+.footer__wrapper__block__socialslogo {
+    object-fit: contain;
+    /* object-position: 10px 10px; */
+    height: 20px;
+}
+
+.footer__line {
+    border: 2px solid rgba(255, 255, 255, 0.1);
+    width: 80%;
+    margin: auto;
+}
+
+.footer__copyright {
+    font-family: Roboto;
+    font-size: 16px;
+    font-weight: 400;
+    color: white;
+    text-align: center;
 }
